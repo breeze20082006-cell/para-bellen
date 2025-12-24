@@ -14,7 +14,6 @@ body{
   background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
   font-family: 'Segoe UI', sans-serif;
   color:white;
-  overflow:hidden;
 }
 
 .card{
@@ -23,12 +22,17 @@ body{
   border-radius:20px;
   max-width:440px;
   max-height:80vh;
-  overflow-y:auto;
   text-align:center;
   box-shadow: 0 0 35px rgba(0,0,0,0.45);
-  overflow:hidden;
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
+.card::-webkit-scrollbar{
+  width: 0;
+}
+  
 h2, h3{
   font-weight:500;
 }
@@ -145,4 +149,5 @@ function msg(n){
 
 </body>
 </html>
+
 
